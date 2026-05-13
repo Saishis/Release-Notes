@@ -1,0 +1,24 @@
+# Release notes for Guardian IDM
+This release note provides information about the update in the Guardian IDM.
+## May 13, 2026
+In this update the expiry of access_token has been increased from 1800 seconds (30 mins) to 7200 seconds (2 hours). This means authenticated sessions now remain valid for a longer duration before requiring renewal.
+
+## Why it matters
+- Reduces the frequency of token refresh calls, improving efficiency for applications that make frequent API requests.
+
+- Enhances user experience by minimizing interruptions due to token expiration.
+
+- Lowers authentication overhead, which can improve performance in high-volume integrations.
+
+## Who is impacted
+- Developers/integrators using Guardian IDM APIs for authentication and secure access.
+
+- System administrators managing session lifecycles and monitoring token usage.
+
+- End users indirectly benefit from fewer login prompts or session interruptions.
+
+## Setup or compatibility considerations
+No changes are required for existing API calls.
+
+## Reference to deeper documentation
+For detailed authentication workflows and updated token management guidelines, please refer to the [Guardian IDM API documentation:](https://github.com/Saishis/Alert-Enterprise-Guardian-IDM-External-Services.git)
